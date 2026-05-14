@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Urbanist;
+  background: url('./assets/images/Texture.svg') no-repeat top center;
+  background-size: cover;
+}
+
+:root {
+  --primary: #2b3990;
+  --primary-500: #111827;
+  --secondary: #535a61;
+  --dark: #0d0d0d;
+  --white: #ffffff;
+  --neutral-25: #f7f8f9;
+  --neutral-50: #f1f2f3;
+  --neutral-100: #e1e3e8;
+  --neutral-200: #cfd1d4;
+  --neutral-400: #959ba4;
+  --neutral-500: #878b94;
+  --neutral-600: #6a7077;
+  --neutral-700: #535a61;
+  --neutral-800: #4d545c;
+  --neutral-900: #262a2e;
+  --yellow-100: #fef3c7;
+  --yellow-800: #92400e;
+  --gray-70: #374151;
+  --gray-100: #f3f4f6;
+  --rose-50: #fff1f2;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+}
