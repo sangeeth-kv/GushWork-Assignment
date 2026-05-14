@@ -45,3 +45,142 @@ body {
   width: 100%;
   padding: 0 16px;
 }
+
+
+.breadcrumb {
+  max-width: 1240px;
+  margin: 32px auto 0 auto;
+  padding: 0 16px;
+  display: flex;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--neutral-800);
+}
+
+.breadcrumb .active {
+  color: var(--dark);
+}
+
+.separator {
+  margin: 0 8px;
+  color: var(--neutral-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Default navbar (normal position) */
+.navbar-container {
+  width: 100%;
+  background: var(--white);
+  margin: auto;
+  border-bottom: 1px solid var(--neutral-50);
+}
+.navbar-container .navbar {
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999999;
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+  width: 100%;
+  background: var(--white);
+  a {
+    text-decoration: none;
+    color: var(--neutral-900);
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  select {
+    border: none;
+    outline: none;
+  }
+  button {
+    padding: 12px 16px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    border: 1px solid transparent;
+  }
+  button:hover {
+    background-color: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+}
+/* Sticky state */
+.navbar-container .navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  padding: 16px;
+  background-color: var(--white);
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: slideDown 0.3s ease forwards;
+}
+
+/* Slide animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.contact-button {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+button {
+  cursor: pointer;
+}
+.section {
+  padding: clamp(48px, 6vw, 100px) clamp(16px, 5vw, 100px);
+}
+.logo {
+  width: 109px;
+  height: 45px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: var(--primary-500);
+}
