@@ -1,44 +1,62 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ghuswork</title>
-    <link rel="icon" type="image/svg+xml" href="./assets/icons/logo.svg" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
 
-    <!-- Header Section -->
-    <header class="navbar-container">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghuswork</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/logo.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header class="navbar-container">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./assets/icons/logo.svg" alt="Mangalam logo" />
+        </div>
+        <div class="menu">
+          <a href="#">About Us</a>
+          <select id="products">
+            <option>Products</option>
+            <option>Wires</option>
+            <option>Coils</option>
+            <option>Pipes</option>
+          </select>
+          <button class="contact-btn">Contact Us</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" id="breadcrumb"></nav>
+
+  <!-- Main contents -->
+
+  <main>
+    <section class="hero">
       <div class="container">
-        <nav class="navbar">
-          <div class="logo">
-            <img src="./assets/icons/logo.svg" alt="Mangalam logo" />
-          </div>
-          <div class="menu">
-            <a href="#">About Us</a>
-            <select id="products">
-              <option>Products</option>
-              <option>Wires</option>
-              <option>Coils</option>
-              <option>Pipes</option>
-            </select>
-            <button class="contact-btn">Contact Us</button>
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <nav class="breadcrumb" id="breadcrumb"></nav>
-
-    <!-- Main contents -->
-
-    <main>
-      <section class="hero">
-        <div class="container">
         <div class="product-details-container">
-          <div class="carousal"></div>
+          <div class="carousal">
+            <div class="carousel"> <!-- MAIN IMAGE -->
+              <div class="main-image"> <img id="mainImage" src="./assets/images/man.svg" alt="Product Image" />
+                <!-- PREV BUTTON --> <button class="nav prev" aria-label="Previous Image"> <img
+                    src="./assets/icons/ArrowLeft.svg" alt="Previous" width="24" height="24" /> </button>
+                <!-- NEXT BUTTON --> <button class="nav next" aria-label="Next Image"> <img
+                    src="./assets/icons/ArrowRight.svg" alt="Next" width="24" height="24" /> </button> <!-- ZOOM -->
+                <div class="zoom-lens"></div>
+                <div class="zoom-preview"></div>
+              </div> <!-- THUMBNAILS -->
+              <div class="thumbnails"> <img src="./assets/images/man.svg" class="thumb active" data-index="0"
+                  alt="Thumbnail 1" /> <img src="./assets/images/worker.svg" class="thumb" data-index="1"
+                  alt="Thumbnail 2" /> <img src="./assets/images/workers.svg" class="thumb" data-index="2"
+                  alt="Thumbnail 3" /> <img src="./assets/images/man.svg" class="thumb" data-index="3"
+                  alt="Thumbnail 4" /> </div>
+            </div>
+          </div>
           <div class="product-details">
             <div class="badges"></div>
             <h1>Premium HDPE Pipes & Coil for Modern Infrastructure</h1>
@@ -49,27 +67,46 @@
             <div class="cta-buttons"></div>
           </div>
         </div>
-        </div>
-      </section>
-      <section class="banner">
-        <div class="container">
-          <div class="banner-content">Trusted by Hundreds of Companies Globally</div>
-          <div class="company-logos"></div>
-        </div>
-      </section>
-      <section class="specifications-container"><div class="container"></div></section>
-      <section class="features-cards"></section>
-      <section class="faq"><div class="container"></div></section>
-      <section class="applications"><div class="container"></div></section>
-      <section class="process"><div class="container"></div></section>
-      <section class="testimonials"><div class="container"></div></section>
-      <section class="portfolio"><div class="container"></div></section>
-      <section class="resources"><div class="container"></div></section>
-      <section class="contact-us"><div class="container"></div></section>
-    </main>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="container">
+        <div class="banner-content">Trusted by Hundreds of Companies Globally</div>
+        <div class="company-logos"></div>
+      </div>
+    </section>
+    <section class="specifications-container">
+      <div class="container"></div>
+    </section>
+    <section class="features-cards"></section>
+    <section class="faq">
+      <div class="container"></div>
+    </section>
+    <section class="applications">
+      <div class="container"></div>
+    </section>
+    <section class="process">
+      <div class="container"></div>
+    </section>
+    <section class="testimonials">
+      <div class="container"></div>
+    </section>
+    <section class="portfolio">
+      <div class="container"></div>
+    </section>
+    <section class="resources">
+      <div class="container"></div>
+    </section>
+    <section class="contact-us">
+      <div class="container"></div>
+    </section>
+  </main>
 
-    <footer class="footer"><div class="container"></div></footer>
+  <footer class="footer">
+    <div class="container"></div>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
